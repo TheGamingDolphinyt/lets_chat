@@ -24,8 +24,8 @@ class GlowingActionButton extends StatelessWidget {
         boxShadow: [
           BoxShadow(
             color: color.withOpacity(1),
-            spreadRadius: 6,
-            blurRadius: 11,
+            spreadRadius: 10,
+            blurRadius: 24,
             offset: const Offset(0, 0)
           ),
         ],

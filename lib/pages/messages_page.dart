@@ -50,8 +50,10 @@ class _MessageTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(4.0),
+    return InkWell(
+      onTap: () {
+        Navigator.of(context).push(ChatScreen.route(messageData));
+      },
       child: Container(
         height: 100,
         margin: const EdgeInsets.symmetric(horizontal: 8),

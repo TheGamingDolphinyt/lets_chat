@@ -136,12 +136,15 @@ class __BottomNavigationBarState extends State<_BottomNavigationBar> {
                 isSelected: (selectedIndex == 1),
                 onTap: handleItemSelected,
               ),
-              GlowingActionButton(
-                color: AppColors.secondary,
-                icon: CupertinoIcons.add,
-                onPressed: () {
-                  print('TODO on a new message');
-                },
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 8),
+                child: GlowingActionButton(
+                  color: AppColors.secondary,
+                  icon: CupertinoIcons.add,
+                  onPressed: () {
+                    print('TODO on a new message');
+                  },
+                ),
               ),
               _NavigationBarItem(
                 index: 2,

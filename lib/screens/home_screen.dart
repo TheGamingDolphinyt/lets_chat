@@ -192,7 +192,7 @@ class _NavigationBarItem extends StatelessWidget {
         onTap(index);
       },
       child: SizedBox(
-        width: 70,
+        width: 67,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
